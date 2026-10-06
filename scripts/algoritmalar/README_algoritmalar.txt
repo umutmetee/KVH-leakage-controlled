@@ -17,3 +17,8 @@ Model_5  Yatak basi referans (7 deg.)    Model_S5 k-en yakin komsu (k=7)
                                          Model_S9 Yigma (LR+NB+RF)
 Ortak boru hatti: model_ortak.py (SEED=42, K=20, C=0.01; secim yalnizca egitim verisinde).
 Beklenen: Model_1 AUROC 0.755, tau 0.428.
+
+Tablolar (veriden): py tablolar_ve_akis.py -> tablolar_cikti.xlsx
+  hasta akisi (931/371/127/744/187), Tablo 1, Tablo 2, Tablo 4, Tablo 5,
+  egitim/test karsilastirmasi (Tablo S7), uc nokta ortusmesi, tum adaylarin eksikligi.
+  tablo1_ek.py: Tablo 1 medyan [IQR] ve boy-kilodan BKI duyarlilik kontrolu.
