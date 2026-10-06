@@ -17,6 +17,7 @@ The repository contains **code only**. The study data come from routine patient 
 | `scripts/KVH_REVIZYON_EK.py` | Bootstrap CIs for the ensembles, post-Platt calibration slope, paired DeLong tests, VIF and family correlations. |
 | `scripts/algoritmalar/Model_1..5_*.py` | One script per model in the main article: logistic regression (primary), SVM, random forest, gradient boosting (Table 3) and the seven-variable bedside reference model (Section 3.8). |
 | `scripts/algoritmalar/Model_S1..S9_*.py` | One script per additional algorithm in Supplementary Table S1. All model scripts share `model_ortak.py` and write `model_sonuclari.xlsx`; `tum_modelleri_calistir.py` runs them all. |
+| `scripts/algoritmalar/tablolar_ve_akis.py` | Patient flow (931 / 371 / 127 / 744 / 187), Table 1, Table 2, Table 4, Table 5, training–test comparison (Table S7), endpoint overlap and missingness of all candidates, written to `tablolar_cikti.xlsx`. |
 | `scripts/algoritmalar/tablo1_ek.py` | Table 1 medians [IQR] and body mass index derived from height and weight (bedside-model sensitivity check). |
 | `scripts/sekil_betikleri/ek_hakem_analizleri_2.py` | Single-time-point models, missingness thresholds, sex-stratified split and the full-cohort equation (Section 3.9, Table S6). |
 | `scripts/sekil_betikleri/00_sekil_verisi_uret.py` | Runs the analysis once and writes all numbers needed for the figures to `sekil_verileri.xlsx` (no patient identifiers). |
@@ -45,7 +46,7 @@ python sekil_betikleri/00_sekil_verisi_uret.py
 python sekil_betikleri/tum_sekilleri_ciz.py   # -> sekil_betikleri/cikti_sekil/en, cikti_sekil/tr
 ```
 
-Output labels and console messages are partly in Turkish (the working language of the study team). Console tags such as `[Tablo V]` refer to an earlier numbering of the tables; the current manuscript numbers tables 1–5 and S1–S6.
+Output labels and console messages are partly in Turkish (the working language of the study team). Console tags such as `[Tablo V]` refer to an earlier numbering of the tables; the current manuscript numbers tables 1–5 and S1–S7.
 
 ## Using the published model on new data
 
