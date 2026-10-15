@@ -2,6 +2,7 @@ cff-version: 1.2.0
 message: "If you use this code, please cite the article and this software archive."
 title: "Code for the final model: leakage-controlled classification of cardiac abnormalities from routine laboratory data"
 version: "v2.0"
+doi: "10.5281/zenodo.23000553"
 authors:
   - family-names: Mete
     given-names: Umut
