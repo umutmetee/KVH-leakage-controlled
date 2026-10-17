@@ -14,10 +14,6 @@ KULLANIM:  py duyarlilik_1233.py
 from model_ortak import *
 import statsmodels.api as sm
 
-P(""); P("=" * 78)
-P("NOT: Yukaridaki 'beklenen 0.755 / 0.428' yazisi eski surumden kalmadir; guncel beklenen 0.731 / 0.387.")
-P("=" * 78)
-
 # --- ayrilan hastalar (dogrulama_302.py ile ayni tanim) ---
 VK = os.path.dirname(VERI)
 d2 = pd.read_excel(os.path.join(VK, "sizintisiz_veri_1233.xlsx"))

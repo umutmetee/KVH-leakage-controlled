@@ -8,6 +8,11 @@ Code for the final model of:
 
 The repository contains **code only**. The patient data cannot be made public; they can be shared with qualified researchers on request to the corresponding author, subject to institutional agreements. Scripts for the sensitivity analyses are also available on request.
 
+Additional scripts (same pipeline, shared module `model_ortak.py`; data files not included):
+
+- `Model_1_...py` to `Model_5_...py`, `Model_S1_...py` to `Model_S9_...py`: the 13 algorithms and the bedside reference model on the same 187 test patients; `tum_modelleri_calistir.py` runs them all and writes `model_sonuclari.xlsx`.
+- `duyarlilik_1233.py`: adds the 301 patients set aside before development to the training partition and re-evaluates on the same test patients (AUROC 0.725 vs 0.731), and repeats over 20 random splits of the pooled cohort (mean 0.734 vs 0.744).
+
 To apply the published model to new patients, use the equation in Table 6 of the article or the spreadsheet calculator (Supplementary File S2).
 
 ```
